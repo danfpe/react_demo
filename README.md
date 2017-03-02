@@ -1,3 +1,5 @@
-React Router Demo
+React Demo
 =====================
-A React Router project for routing members.
+A React project for movies.
+
+Using ReactJS+ES6+webpack+React Router
