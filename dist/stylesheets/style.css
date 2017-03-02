@@ -1,0 +1,243 @@
+html, body {
+    font-family: "Architects Daughter", sans-serif;
+    min-width: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+
+.app {
+    position: relative;
+    display: flex;
+}
+
+
+.home {
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home > nav {
+    display: flex;
+    background-color:rgba(255,255,255,0.1);
+    line-height: 4em;
+    color: white;
+    flex-direction: row;
+    min-width: 100%;
+    z-index: 100;
+}
+
+.home > nav > a {
+    flex-basis: calc(33.33% - 3em);
+    flex-grow: 1;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+}
+
+#homebox {
+    color: #E1F5F5;
+    text-shadow: 5px -5px #0C3B20;
+    font-family: "Architects Daughter", sans-serif;
+    font-size: 4em;
+    display: flex;
+    width: 100%;
+    background-image: url(https://trakt.tv/assets/home/bg/6@2x-a4d3185f76ec68c7818d3a156f182a9f.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height:765px;
+    margin-top: -64px;
+    opacity: 0.9;
+    
+   
+}
+#homebox #slogan {
+    padding-left:300px;
+}
+
+.page>nav {
+    display: flex;
+    background-color: #696969;
+    
+    flex-direction: column;
+}
+
+.page > nav > a {
+    color: white;
+    text-decoration: none;
+    width:40px;
+    line-height: 4em;
+    padding-left: 0.5em;
+    padding-right:1em;
+}
+
+/*shows and movies */
+.item {
+    float: left;
+}
+
+.item-list {
+    background-color: black;
+    color: grey;
+}
+.item img{
+    width:340px;
+
+}
+
+@media screen and (max-width:768px) { /*mobile phone*/
+    .item img {
+        width:100%;
+    }
+    .item {
+        padding: 40px auto;
+    }
+}
+@media screen and (min-width:769px) and (max-width: 992px){ /*tablet*/
+    .item {
+        padding: 0 auto;
+        width:50%;
+        height: 33%;
+    }
+    .item img {
+        width:100%;
+    }   
+}
+@media screen and (min-width:993px) { /*laptop*/
+    .item {
+        padding: 40px auto;
+        width:33.3%;
+    }
+    .item img {
+        width:100%;
+    }   
+}
+
+/*the end of the show and movies*/
+
+/*about*/
+.about {
+    color:grey;
+    font-size: 0.875em;
+    /*display:flex;*/
+    background-image: url("https://trakt.tv/assets/about/bg-afe759a68b56acb84ed79c310f72d0a8.jpg.webp");
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.values {
+    width: 40%;
+    padding-left: 20px;
+}
+.team {
+   text-align: center;
+}
+.founder {
+    float: left;
+    width:50%;
+}
+.founder img {
+    width:100%;
+
+}
+@media screen and (max-width:768px) {
+    .founder {
+        float:none;
+        width: 100%;
+        padding: 10px, auto;
+    }
+    .values {
+        width: 80%;
+    }
+}
+
+
+/*the end of about*/
+
+
+/*The log in form*/
+.auth-login {
+    background-image: url("https://trakt.tv/assets/auth/breaking-bad-blur-23a8acffe8b2e154befc3a1d6dd7285d.jpg.webp");
+    width: 100%;
+    height: 820px;
+    left:-7px;
+    top:-7px;
+    right:-20px;
+    position:relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.login-form {
+    color:grey;
+    background-color: white;
+    display: block; 
+    border: 1px solid grey;
+    width:300px;
+    padding: 30px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.login-form input {
+    width: 90%;
+    height: 30%;
+    margin: 10px auto;
+
+}
+.login-form h3 {
+    text-align: center;
+}
+.login-form .submit {
+    background-color: red;
+    color: white;
+}
+
+/*the end of log in form*/
+.member-list {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 90%;
+    align-content: space-around;
+}
+
+.member-list > h1, .member-list > span {
+    min-width: 100%;
+    padding-bottom: 1em;
+}
+
+.member {
+    flex-direction: row;
+    flex-basis: calc(33.33% - 3em);
+    flex-grow: 1;
+}
+
+.member > h1:first-of-type {
+    font-weight: 100;
+    flex-basis: 100%;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+.about > p {
+    font-size: 1.3em;
+}
+
+.page {
+    display: flex;
+    flex-grow: 1;
+}
+
+.page > div {
+    margin: 0.5em;
+}
+
+.member > a {
+    font-variant: small-caps;
+    position: relative;
+    left: 75%;
+    text-decoration: underline;
+}
