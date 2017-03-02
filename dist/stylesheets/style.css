@@ -58,9 +58,6 @@ html, body {
     opacity: 0.9;
     height: 790px;  
 }
-#homebox #slogan {
-    padding-left:300px;
-}
 
 .page>nav {
     display: flex;
